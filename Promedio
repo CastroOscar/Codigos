@@ -14,7 +14,8 @@ float promedio = 0;
 int main(){
     int cont;
     int  materias; 
-  
+    
+        printf("\tPROMEDIO DEL SEMESTRE\n");
     	printf("Cuantas materias cursaste: ");
         scanf("%d", &materias);       
 	    printf("\n");
