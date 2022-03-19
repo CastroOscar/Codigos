@@ -30,7 +30,7 @@ int main(){
 		printf("Ingresa la calificacion de %s: ",nomMateria[cont]);
 		scanf("%f",&calificaciones[cont]);
 	
-	        promedio += (calificaciones[cont])/3;  
+	        promedio += (calificaciones[cont])/materias;  
     }
 	   
     printf("\n");
