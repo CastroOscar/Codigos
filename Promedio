@@ -1,0 +1,43 @@
+/*---------------------------------------------------
+Descripcion: Calcular promedio de un alumno o alumna
+    Actividad:
+    1. Pedir cuantas calificaciones capturar
+    2. Preguntar nombre de asignaturas
+    3. Calcular el promedio
+---------------------------------------------------*/
+#include<stdio.h> 
+
+char nomMateria[7][20];
+float calificaciones[7]; 
+float promedio = 0;
+
+int main(){
+    int cont;
+    int  materias; 
+  
+    	printf("Cuantas materias cursaste: ");
+        scanf("%d", &materias);       
+	    printf("\n");
+	 
+    for(cont = 0; cont < materias; cont ++){  	
+      	printf("Nombre de la materia %d: ",cont+1);
+		gets(nomMateria[cont]);
+		
+	}printf("\n");
+	
+	for(cont = 0; cont <materias; cont++){		    
+		printf("Ingresa la calificacion de %s: ",nomMateria[cont]);
+		scanf("%f",&calificaciones[cont]);
+	
+	        promedio += (calificaciones[cont])/3;  
+    }
+	   
+    printf("\n");
+    for(cont = 0; cont < materias; cont++){
+    printf("\t %s     \t%0.2f \n",nomMateria[cont],calificaciones[cont]);    
+	}
+    printf("\n\tPromedio: %0.2f\n",promedio);
+    printf("\n\tContador final %i\n", cont);
+    printf("Fin de programa");    
+    return 0;
+}
